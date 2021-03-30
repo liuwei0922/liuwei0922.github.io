@@ -1,6 +1,6 @@
 #!/bin/bash
 
-time='date+%F'
+time='date +%F'
 rm -rf docs
 hugo -d docs
 cp googlec86aa04042151a36.html docs/
