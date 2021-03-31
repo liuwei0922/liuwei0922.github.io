@@ -3,6 +3,7 @@ title: "关于我"
 date: 2021-03-30T22:28:29+08:00
 lastmod: 2021-03-30T22:28:29+08:00
 menu: "main"
+comment: true
 weight: 50
 
 ---
