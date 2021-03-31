@@ -95,7 +95,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = "cyvnKEzOK"        # Changyan app id             # 畅言
-  changyanAppkey = "prod_3d9bdbd4860bfa044653cceaa485c1da"       # Changyan app key
+  changyanAppkey = "32ecd2b2b493079cabfc8c5c7946afd1"       # Changyan app key
 
   livereUID = ""            # LiveRe UID                  # 来必力
 
