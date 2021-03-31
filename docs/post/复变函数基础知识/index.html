@@ -50,7 +50,7 @@
 <meta itemprop="name" content="复变函数基础知识">
 <meta itemprop="description" content="复变函数的积分部分，不涉及级数的知识。"><meta itemprop="datePublished" content="2021-03-30T21:11:26&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-30T21:11:26&#43;08:00" />
-<meta itemprop="wordCount" content="2739">
+<meta itemprop="wordCount" content="3190">
 <meta itemprop="keywords" content="复变函数,微积分,数学物理方法," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="复变函数基础知识"/>
 <meta name="twitter:description" content="复变函数的积分部分，不涉及级数的知识。"/>
@@ -137,8 +137,8 @@
         <div class="post-category">
             <a href="/categories/%E6%95%B0%E5%AD%A6/"> 数学 </a>
             </div>
-          <span class="more-meta"> 约 2739 字 </span>
-          <span class="more-meta"> 预计阅读 6 分钟 </span>
+          <span class="more-meta"> 约 3190 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -408,7 +408,29 @@ $\frac{\partial u}{\partial \varphi}=-r \frac{\partial v}{\partial r}$，$r \fra
 <p>中值定理：</p>
 <p>$f(z)=\frac{1}{2\pi}\int_0^{2\pi}{f(z+Re^{i\varphi})}d\varphi$</p>
 </li>
+<li>
+<p>最大模定理：</p>
+<p>如果不恒等于一常数的函数$f(z)$，在区域D内是解析的，
+在$\overline{D}$内是连续的，那么它的模不可能在D的任何一个内点处达到最大值。</p>
+</li>
+<li>
+<p>施瓦茨引理：</p>
+<p>如果函数$f(z)$在圆$|z|&lt;1$内是解析的，在闭圆$|z|\le1$上是连续的，
+并且$f(0)=0$又在圆内处处都有$|f(z)|\le1$，那么在这个圆内有
+$$|f(z)\le|z|$$
+这时，如果即使在圆内的一个点处有$|f(z)|=|z|$，那么最后这个等式在整个圆内都成立，并且
+$$f(z)=e^{i\alpha}z$$
+其中$\alpha$是一个实常数。</p>
+<p>对于该引理，可以认为，对于任何一个利用解析函数的映射，都是将单位圆映射到一个位于单位圆内部的区域$\Delta$上，
+此时任意一个点都比原来的单位圆要更加的靠近原点，如果即使与原来的距离相等，
+那就是说明，该映射相当与是一个旋转的操作。</p>
+</li>
 </ul>
+<h4 id="高阶导数">高阶导数</h4>
+<p>如果函数$f(z)$在区域D内是解析的，在$\overline{D}$上是连续的，
+那么它在D内的每一个点处都具有所有各阶的导数，并且其第n阶导数可以用公式
+$$f^{(n)}(z)=\frac{n!}{2\pi i}\int_C\frac{f(\xi)d\xi}{(\xi-z)^{n+1}}$$
+表示，其中C是区域D的边界。</p>
 
     </div>
 
