@@ -770,3 +770,6 @@ tt {
         word-wrap: break-word;
     }
 }
+p {
+    text-indent: 2em;
+}
