@@ -1,6 +1,6 @@
 [build]
   publish = "docs"
-  command = "hugo"
+  command = "hugo -d docs"
 
 [build.environment]
   HUGO_VERSION = "0.74.3"
