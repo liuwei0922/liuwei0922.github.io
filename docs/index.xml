@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>墨墨线</copyright>
-    <lastBuildDate>Sat, 03 Apr 2021 15:46:50 +0800</lastBuildDate><atom:link href="http://wuyan.bilimoe.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 19:59:55 +0800</lastBuildDate><atom:link href="http://wuyan.bilimoe.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
       <link>http://wuyan.bilimoe.cn/about/</link>
@@ -15,6 +15,15 @@
       
       <guid>http://wuyan.bilimoe.cn/about/</guid>
       <description>在这里总是要留下点什么东西的吧？ 如果博客里面有什么错误的话，请发邮件给我，感谢！！！</description>
+    </item>
+    
+    <item>
+      <title>复变函数的泰勒级数</title>
+      <link>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</link>
+      <pubDate>Sun, 04 Apr 2021 19:59:55 +0800</pubDate>
+      
+      <guid>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</guid>
+      <description>复变函数的级数 在介绍泰勒级数之前，需要了解幂级数的知识，而幂级数的知识，又需要级数的知识做前置。 复变函数的级数的定义 对于形如： $$\sum^n_{k=0}w_k(z)=w_0(z)+w_1(z)+w_2(z)+\dots+w_k(z)+\dots $$ 的级数称为</description>
     </item>
     
     <item>
