@@ -1,0 +1,22 @@
+[build]
+  publish = "docs"
+  command = "hugo"
+
+[build.environment]
+  HUGO_VERSION = "0.74.3"
+
+[context.production.environment]
+  HUGO_BASEURL = "https://wuyan.bilimoe.cn"
+
+[context.deploy-preview]
+  command = "hugo -s wuyan -b $DEPLOY_PRIME_URL"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+
+[[headers]]
+  for = "*.(css|js|woff|woff2|ttf|png|jpg|jpeg)"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
