@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>牛顿力学 on 墨墨线的笔记</title>
+    <link>http://localhost:1313/tags/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6/</link>
+    <description>Recent content in 牛顿力学 on 墨墨线的笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>墨墨线</copyright>
+    <lastBuildDate>Sat, 03 Apr 2021 15:46:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>质点组力学基础</title>
+      <link>http://localhost:1313/post/%E8%B4%A8%E7%82%B9%E7%B3%BB%E5%8A%9B%E5%AD%A6%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sat, 03 Apr 2021 15:46:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%B4%A8%E7%82%B9%E7%B3%BB%E5%8A%9B%E5%AD%A6%E5%9F%BA%E7%A1%80/</guid>
+      <description>质点组介绍 由大量（有限或无限）相互联系的质点组成的力学体系叫做质点组。 质点组的内力和外力 质点组中质点间相互作用的力，叫做内力; 质点组外的物体</description>
+    </item>
+    
+    <item>
+      <title>有心力</title>
+      <link>http://localhost:1313/post/%E6%9C%89%E5%BF%83%E5%8A%9B/</link>
+      <pubDate>Wed, 31 Mar 2021 15:12:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%9C%89%E5%BF%83%E5%8A%9B/</guid>
+      <description>有心力的基本性质 有心力：一般如果运动中的质点所受到的力的作用线始终通过某一个定点，我们就说这个质点所受的力是有心力。 所经过的定点叫做力心。其</description>
+    </item>
+    
+    <item>
+      <title>质点力学</title>
+      <link>http://localhost:1313/post/%E8%B4%A8%E7%82%B9%E5%8A%9B%E5%AD%A6/</link>
+      <pubDate>Sun, 28 Mar 2021 16:17:47 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%B4%A8%E7%82%B9%E5%8A%9B%E5%AD%A6/</guid>
+      <description>运动的描述方法 在很多实际的情况下，物体的形状和大小可以忽略不记，此时的抽象化的模型就是质点。 在空间中自由运动的质点称为自由质点。 描述质点的运</description>
+    </item>
+    
+  </channel>
+</rss>

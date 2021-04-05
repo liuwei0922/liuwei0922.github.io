@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>微分方程的求解 - 墨墨线的笔记</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨墨线" /><meta name="description" content="微分方程的概念 微分方程 含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。 微分方程" /><meta name="keywords" content="笔记, 物理, 生活" />
+
+
+
+<meta name="google-site-verification" content="YKpgbF2dxr4jUmIGIvHh4RO2mKyq1scMwMN5qg134LQ" />
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/zj.css">
+
+
+<meta property="og:title" content="微分方程的求解" />
+<meta property="og:description" content="微分方程的概念 微分方程 含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。 微分方程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-28T09:39:43&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-28T09:39:43&#43;08:00" />
+
+<meta itemprop="name" content="微分方程的求解">
+<meta itemprop="description" content="微分方程的概念 微分方程 含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。 微分方程"><meta itemprop="datePublished" content="2021-03-28T09:39:43&#43;08:00" />
+<meta itemprop="dateModified" content="2021-03-28T09:39:43&#43;08:00" />
+<meta itemprop="wordCount" content="2409">
+<meta itemprop="keywords" content="微积分,微分方程," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="微分方程的求解"/>
+<meta name="twitter:description" content="微分方程的概念 微分方程 含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。 微分方程"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W66R8NW');</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W66R8NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">墨墨线的笔记</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">墨墨线的笔记</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">微分方程的求解</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-03-28 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%95%B0%E5%AD%A6/"> 数学 </a>
+            </div>
+          <span class="more-meta"> 约 2409 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微分方程的概念">微分方程的概念</a>
+          <ul>
+            <li><a href="#微分方程">微分方程</a></li>
+            <li><a href="#微分方程的阶">微分方程的阶</a></li>
+            <li><a href="#微分方程的解">微分方程的解</a></li>
+            <li><a href="#微分方程的初值问题">微分方程的初值问题</a></li>
+            <li><a href="#微分方程的积分曲线">微分方程的积分曲线</a></li>
+          </ul>
+        </li>
+        <li><a href="#微分方程的求解一阶微分方程">微分方程的求解——一阶微分方程</a>
+          <ul>
+            <li><a href="#可分离变量的微分方程">可分离变量的微分方程</a></li>
+            <li><a href="#齐次方程">齐次方程</a></li>
+            <li><a href="#一阶线性微分方程">一阶线性微分方程</a></li>
+          </ul>
+        </li>
+        <li><a href="#微分方程的求解二阶微分方程">微分方程的求解——二阶微分方程</a>
+          <ul>
+            <li><a href="#可降阶的二阶微分方程">可降阶的二阶微分方程</a></li>
+            <li><a href="#二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程</a></li>
+            <li><a href="#二阶常系数非齐次线性微分方程">二阶常系数非齐次线性微分方程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="微分方程的概念">微分方程的概念</h2>
+<h3 id="微分方程">微分方程</h3>
+<p>含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。</p>
+<h3 id="微分方程的阶">微分方程的阶</h3>
+<p>微分方程中出现的未知函数的导数的最高阶数称为微分方程的阶。</p>
+<h3 id="微分方程的解">微分方程的解</h3>
+<p>求解微分方程时得到的某些函数，能使得微分方程两侧成为恒等式，则称其为该微分方程的解。</p>
+<h4 id="通解">通解</h4>
+<p>含有相互独立的任意常数，且任意常数的个数与微分方程的阶数相等的解称为微分方程的通解。</p>
+<h4 id="特解">特解</h4>
+<p>微分方程的不含有任意常数的解称为微分方程的特解。</p>
+<h3 id="微分方程的初值问题">微分方程的初值问题</h3>
+<p>寻找初始条件，带有初始条件的微分方程称为微分方程的初值问题。</p>
+<h3 id="微分方程的积分曲线">微分方程的积分曲线</h3>
+<p>微分方程的解的图形是一条曲线，该曲线称为微分方程的积分曲线。</p>
+<h2 id="微分方程的求解一阶微分方程">微分方程的求解——一阶微分方程</h2>
+<h3 id="可分离变量的微分方程">可分离变量的微分方程</h3>
+<p>设有一阶微分方程$\frac{dy}{dx}=F(x,y)$，如果其右端表达式能分解成$F(x,y)=f(x)g(y)$，即有$\frac{dy}{dx}=f(x)g(y)$，从而有
+$$\frac{dy}{g(y)}=f(x)dx$$
+则该微分方程被称为可分离变量的微分方程。</p>
+<h4 id="解">解</h4>
+<p>两边直接积分即可。</p>
+<h3 id="齐次方程">齐次方程</h3>
+<p>经过适当的变量代换后，该方程也可以转化为可分离变量的方程。</p>
+<p>如果一阶微分方程$\frac{dy}{dx}=f(x,y)$中的$f(x,y)$，可以化为$\varphi(\frac{y}{x})$，则通过变量替换$u=\frac{y}{x}$转化为可分离变量的方程，则该微分方程被称为齐次方程。</p>
+<h4 id="解-1">解</h4>
+<p>$$\frac{dy}{dx}=\varphi(\frac{y}{x})$$
+其中令$u=\frac{y}{x}$即$y=ux$有
+$$u+x\frac{du}{dx}=\varphi(u)$$
+分离变量，可得
+$$\frac{du}{\varphi(u)-u}=\frac{dx}{x}$$
+两端积分，得
+$$\int \frac{du}{\varphi(u)-u}=\int \frac{dx}{x}$$
+最后变量还原即可。</p>
+<h3 id="一阶线性微分方程">一阶线性微分方程</h3>
+<p>$$\frac{dy}{dx}+P(x)y=Q(x)$$
+类似的方程称为一阶线性微分方程。其中，函数P(x)，Q(x)是某一区间I上的连续函数，当$Q(x)
+\equiv
+0$时，方程化为可分离变量的齐次方程，称为一阶线性微分方程，相应的，当$Q(x)\not \equiv 0$时，方程称为一阶非齐次线性微分方程。</p>
+<h4 id="解-2">解</h4>
+<p>齐次方程下的通解，可经过分离变量，后积分，得到以下结果：
+$$y=Ce^{-\int P(x)dx}$$
+其中的C是任意常数。
+对于非齐次方程，有常数变易法，即，设一阶非齐次方程的通解为
+$$y=u(x)e^{-\int P(x)dx}$$
+此时将通解代入微分方程，得到，
+$$u^{'}(x)e^{-\int P(x)dx}=Q(x)$$
+此时两边积分，得到，
+$$u(x)=\int Q(x)e^{\int P(x)dx}+C$$
+此时将$u(x)$代入通解中，有
+$$y=[\int Q(x)e^{\int P(x)dx}dx+C]e^{-\int P(x)dx}$$
+也可表示为
+$$y=Ce^{-\int P(x)dx}+e^{-\int P(x)dx}\int Q(x)e^{\int P(x)dx}dx$$</p>
+<h2 id="微分方程的求解二阶微分方程">微分方程的求解——二阶微分方程</h2>
+<h3 id="可降阶的二阶微分方程">可降阶的二阶微分方程</h3>
+<ul>
+<li>
+<p>$y^{''}=f(x)$型</p>
+<ul>
+<li>
+<p>解：</p>
+<p>可以直接积分即可。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>$y^{''}=f(x,y^{'})$型</p>
+<ul>
+<li>
+<p>解</p>
+<p>做代换，令$y^{'}=p$，则$y^{''}=\frac{dp}{dx}$，此时原方程化为$\frac{dp}{dx}=f(x,p)$，这是关于x和p的一阶微分方程，可用前面的方法求解。这里设得到的解为$p=\varphi(x,C_1)$，此时原方程的解是
+$$y=\int \varphi(x,C_1)dx+C_2$$</p>
+</li>
+</ul>
+</li>
+<li>
+<p>$y^{''}=f(y,y^{'})$型</p>
+<ul>
+<li>
+<p>解</p>
+<p>做代换，令$y^{'}=p$，此时有$y^{''}=\frac{dp}{dx}=\frac{dp}{dy}\cdot        \frac{dy}{dx}=p\frac{dp}{dy}$，此时原方程化为$p\frac{dp}{dy}=f(y,p)$，这是关于y和p的一阶微分方程，可用前面的方法求解。这里设得到的解为$p=\varphi(y,C_1)$，则原方程的通解为，
+$$\int \frac{dy}{\varphi(y,C_1)}=x+C_2$$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程</h3>
+<p>$$y^{''}+py^{'}+qy=0$$</p>
+<h4 id="解-3">解</h4>
+<p>特征根法：</p>
+<p>取特解$y=e^{rx}$代入，得到$e^{rx}(r^2+pr+q)=0$，由于指数函数不为0，则有，
+$$r^2+pr+q=0$$
+此时该方程为微分方程的特征方程，特征方程的根称为方程的特征根。对于该特征方程的根的情况，有以下讨论：</p>
+<ol>
+<li>
+<p>当$p^2-4q&gt;0$，特征方程有两个不相等的实根，$r_1和r_2$</p>
+<p>这时方程有两个特解，$y=e^{r_1x}$，和$y=e^{r_2x}$，此时通解为
+$$y=C_1e^{r_1x}+C_2e^{r_2x}$$</p>
+</li>
+<li>
+<p>当$p^2-4q=0$，特征方程有两个相等的实根，$r_1=r_2=-
+\frac{p}{2}$，此时方程只有一个解，要得到第二个特解，使用常数变易法，有设$y_2=u(x)e^{r_1x}$，代入微分方程，并积分，得到
+$$u=C_1x+C_2$$
+此时取$u=x$，得$y_2=xe^{r_1x}$，这是方程的另一个特解，此时的通解为
+$$y=C_1e^{r_1x}+C_2xe^{r_1x}$$</p>
+</li>
+<li>
+<p>当$p^2-4q&lt;0$，特征方程有一对共轭复根：$r_1=\alpha+\beta i$和$r_2=\alpha -
+\beta i$，此时使用欧拉公式，有
+$$y_1=e^{\alpha x}(\cos \beta x+i \sin \beta x)$$
+$y_2$同理，不过符号相反。此时为在实数域内求解，可以将两个特解进行一定的变换，取另外两个特解
+$$\overline{y_1}=\frac{1}{2}(y_1+y_2)=e^{\alpha x}\cos \beta x$$
+$$\overline{y_2}=\frac{1}{2i}(y_1-y_2)=e^{\alpha x}\sin \beta x$$
+所以此时的方程的通解是，
+$$y=e^{\alpha x}(C_1\cos \beta x+C_2 \sin \beta x)$$</p>
+</li>
+</ol>
+<h3 id="二阶常系数非齐次线性微分方程">二阶常系数非齐次线性微分方程</h3>
+<p>$$y^{''}+py^{'}+qy=f(x)$$</p>
+<h4 id="解-4">解</h4>
+<p>对于整个求解，是找到某一个该微分方程的特解，可以设该特解为$y^{\ast}=e^{\lambda x}Q(x)$，以下的讨论都是在找Q(x)，Q(x)为待定系数的多项式。将$y^{\ast}$代入微分方程中，可以得到
+$$Q^{''}(x)+(2\lambda+p)Q^{'}(x)+(\lambda^2+p\lambda+q)Q(x)=P_n(x)$$</p>
+<ol>
+<li>
+<p>$f(x)=e^{\lambda x}P_n(x)$型，其中$P_n(x)$是关于x的n次不等式，$\lambda$为常数。</p>
+<ol>
+<li>若$\lambda$不是对应齐次多项式的特征方程的特征根，此时一阶导系数和零阶导系数都不为零，则$Q(x)$和$P_n(x)$是同次幂，待定系数即可。</li>
+<li>如果$\lambda$是对应的特征方程的单特征根，此时零阶导系数为零，一阶导系数不为零，则此时$Q^{'}(x)$和$P_n(x)$是同次幂，此时取待定系数即可。</li>
+<li>若$\lambda$是对应特征方程的重特征根，此时零阶导系数为零，同时一阶导系数也为零，则此时$Q^{''}(x)$和$P_n(x)$是同次幂，此时待定系数即可。</li>
+</ol>
+</li>
+<li>
+<p>$f(x)=e^{\lambda x}[P_l(x)\cos\omega x+P_n(x)\sin\omega x]$情形</p>
+<p>其中$P_n(x)$和$P_l(x)$分别是x的n次和l次多项式，$\lambda$和$\omega$是常数，对应的非齐次方程的特解为
+$$y^{\ast}=x^ke^{\lambda x}[R_m^{(1)}(x)\cos\omega x+R_m^{(2)}(x)\sin \omega
+x]$$
+其中$R_m^{(1)}(X)$和$R_m^{(2)}(x)$均是m次待定系数多项式，$m=\max(l,n)$，而k=0,1则按照$\lambda\pm i \omega$不是特征根、是特征根而选取。</p>
+</li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨墨线</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-03-28
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+          <a href="/tags/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">微分方程</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E8%B4%A8%E7%82%B9%E5%8A%9B%E5%AD%A6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">质点力学</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="SOHUCS" sid="/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/"></div>
+    <script type="text/javascript">
+    (function(){
+      if (window.location.hostname === 'localhost') return;
+
+      var appid = 'cyvnKEzOK';
+      var conf = '32ecd2b2b493079cabfc8c5c7946afd1';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+    })();
+    </script>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="Qinmoxiao@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://space.bilibili.com/85624818" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>墨墨线</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.0e047f5948826592d9149f28a52b8f272c5ae674fc0ce63ecac4e955f9bd531f.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?e2ea4833e46131fb94fec2ecd86dde3f";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
