@@ -208,7 +208,7 @@ copyright = "墨墨线"            # default: author.name ↓        # 默认为
 
 # see https://gohugo.io/getting-started/configuration-markup
 [markup]
-  defaultMarkdownHandler = "blackFriday"
+  defaultMarkdownHandler = "blackfriday"
   [markup.blackFriday]
     extensions = ["joinLines"]
   [markup.tableOfContents]
