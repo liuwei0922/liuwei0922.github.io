@@ -49,7 +49,6 @@ copyright = "墨墨线"            # default: author.name ↓        # 默认为
   identifier = "categories"
   url = "/categories/"
 
-#消除换行转空格
 [blackfriday]
   extensions = ["joinLines"]
 
