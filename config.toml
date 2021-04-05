@@ -229,3 +229,6 @@ copyright = "墨墨线"            # default: author.name ↓        # 默认为
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+#消除换行转空格
+[blackfriday]
+  extensions = ["joinLines"]
