@@ -1,5 +1,5 @@
 baseURL = "http://wuyan.bilimoe.cn"
-languageCode = "en"
+languageCode = "zh"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "墨墨线的笔记"
 preserveTaxonomyNames = true
