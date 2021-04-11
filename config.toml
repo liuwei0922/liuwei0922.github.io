@@ -102,7 +102,7 @@ copyright = "墨墨线"            # default: author.name ↓        # 默认为
 
   baiduPush = false        # baidu push                  # 百度
   baiduAnalytics = "e2ea4833e46131fb94fec2ecd86dde3f"      # Baidu Analytics
-  baiduVerification = ""   # Baidu Verification
+  baiduVerification = "code-A1sutsuxWk"   # Baidu Verification
   googleVerification = "YKpgbF2dxr4jUmIGIvHh4RO2mKyq1scMwMN5qg134LQ"  # Google Verification         # 谷歌
 
   # Link custom CSS and JS assets
