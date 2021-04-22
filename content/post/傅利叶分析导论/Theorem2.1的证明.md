@@ -2,7 +2,7 @@
 title: "Theorem2.1的证明"
 date: 2021-04-18T10:21:24+08:00
 lastmod: 2021-04-18T10:21:24+08:00
-draft: false
+draft: true
 keywords: []
 description: ""
 tags: ['傅利叶分析']
