@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>洛朗级数 on 墨墨线的笔记</title>
-    <link>http://localhost:1313/tags/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0/</link>
+    <link>http://wuyan.bilimoe.cn/tags/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0/</link>
     <description>Recent content in 洛朗级数 on 墨墨线的笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>墨墨线</copyright>
-    <lastBuildDate>Mon, 12 Apr 2021 10:35:47 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 10:35:47 +0800</lastBuildDate><atom:link href="http://wuyan.bilimoe.cn/tags/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>洛朗级数和奇点</title>
-      <link>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</link>
       <pubDate>Mon, 12 Apr 2021 10:35:47 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</guid>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</guid>
       <description>唯一性定理 对于一个解析函数，可以由它在解析区域的边界上的值来完全确定。这个地方要证明的是对于一个解析函数，可以由它在任一点列上的一组值来完全</description>
     </item>
     

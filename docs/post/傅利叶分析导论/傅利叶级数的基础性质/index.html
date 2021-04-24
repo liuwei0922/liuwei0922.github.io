@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>傅利叶级数的基础性质 - 墨墨线的笔记</title>
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="墨墨线" /><meta name="description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以将其展开" /><meta name="keywords" content="傅利叶级数" />
+<meta name="author" content="墨墨线" /><meta name="description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 前置知识 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以" /><meta name="keywords" content="傅利叶级数" />
 
 
 <meta name="baidu-site-verification" content="code-A1sutsuxWk" />
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.82.0 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/" />
+<link rel="canonical" href="http://wuyan.bilimoe.cn/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,19 +41,19 @@
 
 
 <meta property="og:title" content="傅利叶级数的基础性质" />
-<meta property="og:description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以将其展开" />
+<meta property="og:description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 前置知识 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://wuyan.bilimoe.cn/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-04-11T22:46:36&#43;08:00" />
-<meta property="article:modified_time" content="2021-04-11T22:46:36&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-24T17:57:17&#43;00:00" />
 
 <meta itemprop="name" content="傅利叶级数的基础性质">
-<meta itemprop="description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以将其展开"><meta itemprop="datePublished" content="2021-04-11T22:46:36&#43;08:00" />
-<meta itemprop="dateModified" content="2021-04-11T22:46:36&#43;08:00" />
-<meta itemprop="wordCount" content="4071">
+<meta itemprop="description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 前置知识 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以"><meta itemprop="datePublished" content="2021-04-11T22:46:36&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-24T17:57:17&#43;00:00" />
+<meta itemprop="wordCount" content="4079">
 <meta itemprop="keywords" content="傅利叶分析," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="傅利叶级数的基础性质"/>
-<meta name="twitter:description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以将其展开"/>
+<meta name="twitter:description" content="对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 前置知识 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -161,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="post-category">
             <a href="/categories/%E6%95%B0%E5%AD%A6/"> 数学 </a>
             </div>
-          <span class="more-meta"> 约 4071 字 </span>
+          <span class="more-meta"> 约 4079 字 </span>
           <span class="more-meta"> 预计阅读 9 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <ul>
     <li>
       <ul>
-        <li>
+        <li><a href="#前置知识">前置知识</a>
           <ul>
             <li><a href="#傅利叶级数的形式">傅利叶级数的形式</a></li>
             <li><a href="#讨论的函数">讨论的函数</a></li>
@@ -211,6 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
     <div class="post-content">
       <p>对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。</p>
+<h2 id="前置知识">前置知识</h2>
 <h3 id="傅利叶级数的形式">傅利叶级数的形式</h3>
 <p>对于一个函数（以下均为黎曼可积），可以将其展开为以下形式
 $$\sum_{n=-\infty}^{\infty}c_ne^{inx}$$
@@ -238,7 +239,7 @@ $$f(\theta)=F(e^{i\theta})$$
 但是该式也对$f$存在限制，即$f$必须是在任意区间的两个端点处的取值是相同的，否则该映射是不成立的。</p>
 <h2 id="傅利叶级数的定义">傅利叶级数的定义</h2>
 <p>对于一个在区间$[a,b]$上的长度为$L$的可积函数，都可以对其有傅利叶级数的展开，其展开系数是
-$$\hat{f}(n)= \frac{1}{L}\int_a^bf(x)e^{{-2\pi inx}/{L}}dx,\quad n\in\mathbb{Z}$$
+$$\hat{f}(n)= \frac{1}{L}\int_a^bf(x)e^{ { -2\pi inx }{/L} }dx,\quad n\in\mathbb{Z}$$
 此时，傅利叶级数的展开式（并没有说明其收敛性）为：
 $$f\sim\sum_{n=-\infty}^{\infty}\hat{f}(n)e^{2\pi inx/L}$$</p>
 <p>之后我们考虑的基本都是周期为$2\pi$的函数。所以上式可以简化为<a href="#%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%BD%A2%E5%BC%8F">一开始的形式</a>。</p>
@@ -473,7 +474,7 @@ $$A_r(f)(\theta)=\sum^{\infty}<em>{n=-\infty}r^{|n|}a_ne^{in\theta}=(f*P_r)(\the
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-04-11
+        2021-04-24
         
     </span>
   </p>
@@ -511,7 +512,7 @@ $$A_r(f)(\theta)=\sum^{\infty}<em>{n=-\infty}r^{|n|}a_ne^{in\theta}=(f*P_r)(\the
       <div class="social-links">
       <a href="Qinmoxiao@126.com" class="iconfont icon-email" title="email"></a>
       <a href="https://space.bilibili.com/85624818" class="iconfont icon-bilibili" title="bilibili"></a>
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="http://wuyan.bilimoe.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
@@ -560,6 +561,17 @@ $$A_r(f)(\theta)=\sum^{\infty}<em>{n=-\infty}r^{|n|}a_ne^{in\theta}=(f*P_r)(\the
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-B04NT4H4G2', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
   (function() {

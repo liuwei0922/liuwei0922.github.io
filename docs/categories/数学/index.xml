@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数学 on 墨墨线的笔记</title>
-    <link>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/</link>
+    <link>http://wuyan.bilimoe.cn/categories/%E6%95%B0%E5%AD%A6/</link>
     <description>Recent content in 数学 on 墨墨线的笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>墨墨线</copyright>
-    <lastBuildDate>Mon, 12 Apr 2021 10:35:47 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 10:35:47 +0800</lastBuildDate><atom:link href="http://wuyan.bilimoe.cn/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>洛朗级数和奇点</title>
-      <link>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</link>
       <pubDate>Mon, 12 Apr 2021 10:35:47 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</guid>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E6%B4%9B%E6%9C%97%E7%BA%A7%E6%95%B0%E5%92%8C%E5%A5%87%E7%82%B9/</guid>
       <description>唯一性定理 对于一个解析函数，可以由它在解析区域的边界上的值来完全确定。这个地方要证明的是对于一个解析函数，可以由它在任一点列上的一组值来完全</description>
     </item>
     
     <item>
       <title>傅利叶级数的基础性质</title>
-      <link>http://localhost:1313/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/</link>
       <pubDate>Sun, 11 Apr 2021 22:46:36 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/</guid>
-      <description>对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以将其展开</description>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/</guid>
+      <description>对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。 前置知识 傅利叶级数的形式 对于一个函数（以下均为黎曼可积），可以</description>
     </item>
     
     <item>
       <title>复变函数的泰勒级数</title>
-      <link>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</link>
       <pubDate>Sun, 04 Apr 2021 19:59:55 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</guid>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/</guid>
       <description>复变函数的级数 在介绍泰勒级数之前，需要了解幂级数的知识，而幂级数的知识，又需要级数的知识做前置。 复变函数的级数的定义 对于形如： $$\sum^n_{k=0}w_k(z)=w_0(z)+w_1(z)+w_2(z)+\dots+w_k(z)+\dots $$ 的级数称为</description>
     </item>
     
     <item>
       <title>复变函数基础知识</title>
-      <link>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Tue, 30 Mar 2021 21:11:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
       <description>复数 复数的表示方法： 直角坐标系下的表示：$z=x+iy$ ，其中$i$是虚数单位 极坐标下的表示：$z=re^{i\varphi}$ 由表示方法可</description>
     </item>
     
     <item>
       <title>微分方程的求解</title>
-      <link>http://localhost:1313/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/</link>
+      <link>http://wuyan.bilimoe.cn/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/</link>
       <pubDate>Sun, 28 Mar 2021 09:39:43 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/</guid>
+      <guid>http://wuyan.bilimoe.cn/post/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/</guid>
       <description>微分方程的概念 微分方程 含有未知函数及其导数与自变量的等式称为微分方程(其中自变量、未知函数可以在方程中不出现，但是其导数必须出现)。 微分方程</description>
     </item>
     

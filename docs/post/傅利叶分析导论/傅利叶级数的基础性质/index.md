@@ -1,5 +1,7 @@
 对于傅利叶级数的一些性质的讨论，从一些特例到卷积再到“good kernel”。
 
+## 前置知识
+
 ### 傅利叶级数的形式
 对于一个函数（以下均为黎曼可积），可以将其展开为以下形式
 $$\sum_{n=-\infty}^{\infty}c_ne^{inx}$$
@@ -34,7 +36,7 @@ $$f(\theta)=F(e^{i\theta})$$
 
 ## 傅利叶级数的定义
 对于一个在区间$[a,b]$上的长度为$L$的可积函数，都可以对其有傅利叶级数的展开，其展开系数是
-$$\hat{f}(n)= \frac{1}{L}\int_a^bf(x)e^{{-2\pi inx}/{L}}dx,\quad n\in\mathbb{Z}$$
+$$\hat{f}(n)= \frac{1}{L}\int_a^bf(x)e^{ { -2\pi inx }{/L} }dx,\quad n\in\mathbb{Z}$$
 此时，傅利叶级数的展开式（并没有说明其收敛性）为：
 $$f\sim\sum_{n=-\infty}^{\infty}\hat{f}(n)e^{2\pi inx/L}$$
 
