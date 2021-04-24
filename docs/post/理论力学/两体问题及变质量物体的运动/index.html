@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>两体问题及变质量物体的运动 - 墨墨线的笔记</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨墨线" /><meta name="description" content="两体运动 由于之前的分析，我们可以得到，在两体运动中，物体的运动轨迹是圆锥曲线。 但是在普通的坐标系下这个问题是十分复杂的，所以我们在这里去想办" /><meta name="keywords" content="笔记, 物理, 生活" />
+
+
+<meta name="baidu-site-verification" content="code-A1sutsuxWk" />
+<meta name="google-site-verification" content="YKpgbF2dxr4jUmIGIvHh4RO2mKyq1scMwMN5qg134LQ" />
+
+
+<meta name="generator" content="Hugo 0.82.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/%E4%B8%A4%E4%BD%93%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8F%98%E8%B4%A8%E9%87%8F%E7%89%A9%E4%BD%93%E7%9A%84%E8%BF%90%E5%8A%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.39a3e01cac9473be1356f3572fcfe34b2e363efabad244a99a40f28a812c837e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/zj.css">
+
+
+<meta property="og:title" content="两体问题及变质量物体的运动" />
+<meta property="og:description" content="两体运动 由于之前的分析，我们可以得到，在两体运动中，物体的运动轨迹是圆锥曲线。 但是在普通的坐标系下这个问题是十分复杂的，所以我们在这里去想办" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/%E4%B8%A4%E4%BD%93%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8F%98%E8%B4%A8%E9%87%8F%E7%89%A9%E4%BD%93%E7%9A%84%E8%BF%90%E5%8A%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-04-11T10:33:44&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-11T10:33:44&#43;08:00" />
+
+<meta itemprop="name" content="两体问题及变质量物体的运动">
+<meta itemprop="description" content="两体运动 由于之前的分析，我们可以得到，在两体运动中，物体的运动轨迹是圆锥曲线。 但是在普通的坐标系下这个问题是十分复杂的，所以我们在这里去想办"><meta itemprop="datePublished" content="2021-04-11T10:33:44&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-11T10:33:44&#43;08:00" />
+<meta itemprop="wordCount" content="1304">
+<meta itemprop="keywords" content="质点组力学,理论力学,牛顿力学," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="两体问题及变质量物体的运动"/>
+<meta name="twitter:description" content="两体运动 由于之前的分析，我们可以得到，在两体运动中，物体的运动轨迹是圆锥曲线。 但是在普通的坐标系下这个问题是十分复杂的，所以我们在这里去想办"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W66R8NW');</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W66R8NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">墨墨线的笔记</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">墨墨线的笔记</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">两体问题及变质量物体的运动</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-04-11 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%89%A9%E7%90%86/"> ‘物理 </a>
+            </div>
+          <span class="more-meta"> 约 1304 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#两体运动">两体运动</a>
+          <ul>
+            <li><a href="#惯性系下的动力学方程">惯性系下的动力学方程</a></li>
+            <li><a href="#质心下的动力学方程">质心下的动力学方程</a></li>
+            <li><a href="#折合质量">折合质量</a></li>
+          </ul>
+        </li>
+        <li><a href="#变质量物体的运动">变质量物体的运动</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="两体运动">两体运动</h2>
+<p>由于之前的分析，我们可以得到，在两体运动中，物体的运动轨迹是圆锥曲线。
+但是在普通的坐标系下这个问题是十分复杂的，所以我们在这里去想办法简化问题。</p>
+<h3 id="惯性系下的动力学方程">惯性系下的动力学方程</h3>
+<p>以太阳与地球的运动为例，其中太阳在惯性系下的动力学方程为：
+$$m_S\frac{d^2 \vec r_S}{dt^2}=\frac{Gm_Sm}{r^2}\frac{\vec r}{r}$$
+其中的$\vec r=\overrightarrow{SP}$,剩下的量如图所示：</p>
+<p><img id="坐标图" src="https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9jdW10ZWR1Y24tbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvbGl1d2VpMDkyMl9jdW10X2VkdV9jbi9FZmtRcHZVbThtdEhzRWNoQTNkXzJSSUJQc1c5ams2RElDOG5CdFZnRGdpWldRP2U9ZjdVS2Ja.jpg" width="50%" /></p>
+<p>而地球在惯性系下的动力学方程是：
+$$m\frac{d^2\vec r_P}{dt^2}=-\frac{Gm_Sm}{r^2}\frac{\vec r}{r}$$
+将两个方程相加，可以得到;
+$$\frac{d^2}{dt^2}(m_S\vec r_S+m\vec r_P)=0$$
+仅看括号内的内容，可以发现是质心系的质心位置确定，即
+$$m_S\vec r_S+m\vec r_P=(m_S+m)\vec r_C$$
+其中$r_C$是其质心对于该惯性系的位矢。将上式代入可以得到
+$$(m_S+m)\frac{d^2}{dt^2}\vec r_C=0$$
+我们可以得到，其质心处的运动将保持惯性运动（合力为零）。</p>
+<h3 id="质心下的动力学方程">质心下的动力学方程</h3>
+<p>仍然是<a href="#%E5%9D%90%E6%A0%87%E5%9B%BE">该图</a>，依据该图列方程，有行星对质心C的动力学方程为
+$$m\ddot{\vec r_1}=-\frac{k^2m}{(r_1+r_2)^2}\frac{\vec r_1}{r_1}$$
+由于C是质心，鼓$mr_1=m_Sr_2$，而$r_1+r_2=(1+\frac{m}{m_S})r_1=\frac{m_S+m}{m_S}r_1$，
+此时上式变为：
+$$m\ddot{\vec r_1}=-\frac{k^2mm_S^2}{(m_S+m)^2}\frac{1}{r_1^2}\frac{\vec r_1}{r_1}$$
+可以看出，力和距离的关系仍然是平方反比的关系。对于太阳，情况类似。可以说，行星在质心系下仍然是圆锥曲线的轨迹。</p>
+<h3 id="折合质量">折合质量</h3>
+<p>现在来找行星对太阳的相对运动方程，坐标系还是<a href="#%E5%9D%90%E6%A0%87%E5%9B%BE">该图</a>。</p>
+<p>出发点是在<a href="#%E6%83%AF%E6%80%A7%E7%B3%BB%E4%B8%8B%E7%9A%84%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%96%B9%E7%A8%8B">惯性系下的动力学方程</a>，将其变换，想办法消掉$m_S$，可以得到
+$$m\frac{d^2\vec r}{dt^2}=-\frac{Gm(m_S+m)}{r^2}\frac{\vec r}{r}$$
+其中$m$是行星的质量，$\vec r$是行星对太阳$S$的位矢，$\ddot{\vec r}$是行星相对于太阳运动时的加速度。</p>
+<p>所以可以认为该方程是相对于太阳的动力学方程，可以认为此时太阳是不动的。</p>
+<p>为简单起见，将方程改写为以下形式：
+$$\frac{m_Sm}{m_S+m}\frac{d^2\vec r}{dt^2}=-\frac{k^2m}{r^2}\frac{\vec r}{r}$$
+其中，$k^2=Gm_S$是一个关于太阳的量，显然，该式中太阳的质量为变化，行星的质量减小了。</p>
+<p>所以我们取$\mu=\frac{m_Sm}{m_S+m}$，称其为<strong>折合质量</strong>。</p>
+<h2 id="变质量物体的运动">变质量物体的运动</h2>
+<p>对于变质量的物体的运动，此时显然不能直接使用牛顿第二定律，对于不同情况要特殊分析。
+此时我们找一个避免使用牛顿第二定律的方法，简化问题。</p>
+<p>设一物体的质量在时间$t$时为$m$，它的速度是$\vec v$（远小于光速），同时一微小质量$\Delta m$以速度$\vec u$运动，
+并在$t+\Delta t$时间间隔内与$m$合并，合并后的共同速度是$\vec v+\Delta \vec v$如果作用在$m$及$\Delta m$上的合外力为$\vec F$,
+可以由动量定理得
+$$(m+\Delta m)(\vec v+\Delta\vec v)-m\vec v-\Delta \vec u=\vec F\Delta t$$
+略去二阶小量，并除以$\Delta t$，并使$\Delta t\rightarrow0$得到变质量物体动力学方程为：
+$$\frac{d}{dt}(m\vec v)-\frac{dm}{dt}\vec u=F$$
+其中，$u$是微质量$\Delta m$未与$m$合并以前或自$m$分出后的速度，$\frac{dm}{dt}$为质量的时间变化率（可正可负），
+$\vec F$是总合力。</p>
+<ul>
+<li>当$\vec u=0$时，有$\frac{d}{dt}(m\vec v)=\vec F$</li>
+<li>如果$\vec u=\vec v$，有$m\frac{d\vec v}{dt}=\vec F$
+这与质量为定值的运动方程形式上没有什么区别，但是实质是不一样的，这里的$m$一般是$t$的函数。</li>
+</ul>
+<p>实际计算过程中要确定的是谁是变质量的物体，有时可能是多个变质量的物体，需要列多个方程求解。
+对于问题的简化是必须的，不到必须时，不推荐使用该方式解决问题，一般可以用守恒律解决问题。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨墨线</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-04-11
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E8%B4%A8%E7%82%B9%E7%BB%84%E5%8A%9B%E5%AD%A6/">质点组力学</a>
+          <a href="/tags/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/">理论力学</a>
+          <a href="/tags/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6/">牛顿力学</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%82%85%E5%88%A9%E5%8F%B6%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/%E5%82%85%E5%88%A9%E5%8F%B6%E7%BA%A7%E6%95%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%80%A7%E8%B4%A8/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">傅利叶级数的基础性质</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0/">
+            <span class="next-text nav-default">复变函数的泰勒级数</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="Qinmoxiao@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://space.bilibili.com/85624818" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>墨墨线</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.0e047f5948826592d9149f28a52b8f272c5ae674fc0ce63ecac4e955f9bd531f.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?e2ea4833e46131fb94fec2ecd86dde3f";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
